@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            position:absolute;
+            top:200px;
+            left:200px;
+            width:200px;
+            height:200px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    //按方向键可以控制页面上盒子移动 4-18
+    <script>
+        var oBox = document.getElementById('box');
+        var t = 200;
+        var l = 200;
+        document.onkeydown = function(e) {
+            switch(e.keyCode) {
+                case 37:
+                    l -= 3;
+                    break;
+                case 38:
+                    t -= 3;
+                    break;
+                case 39:
+                    l += 3;
+                    break;
+                case 40:
+                    t += 3;
+                    break;
+            }
+        oBox.style.top = t +"px";
+        oBox.style.left = l + "px";
+        }
+        
+    </script>
+</body>
+</html>
