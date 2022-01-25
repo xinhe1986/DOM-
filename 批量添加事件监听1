@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<body>
+    <ul id = "class">
+        <li>I am list</li>
+        <li>I am list</li>
+        <li>I am list</li>
+        <li>I am list</li>
+        <li>I am list</li>
+        <li>I am list</li>
+        <li>I am list</li>
+        <li>I am list</li>
+        <li>I am list</li>
+        <li>I am list</li>
+        <li>I am list</li>
+        <li>I am list</li>
+        <li>I am list</li>
+        <li>I am list</li>
+        <li>I am list</li>
+        <li>I am list</li>
+        <li>I am list</li>
+        <li>I am list</li>
+        <li>I am list</li>
+        <li>I am list</li>
+    </ul>
+    <script>
+        var oClass = document.getElementById("class");
+        var oLi = oClass.getElementsByTagName("li");
+        var a = 0;
+        for (i = 0; i < oLi.length; i++) {
+            oLi[i].onclick = function() {
+                this.style.color = "red";
+            };
+        }
+    </script>
+    
+</body>
+</html>
